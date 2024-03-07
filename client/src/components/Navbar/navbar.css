@@ -1,0 +1,135 @@
+
+.navbar{
+    position: absolute;
+    top: 15px;
+    /* box-shadow: 0 0 20px 5px rgb(51, 50, 50);  */
+    width: 100%;
+    background-color:rgba(22, 7, 36, 0.175);
+}
+
+.wrapper{
+    color: black;
+    height: 70px;
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.logo p{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+button{
+    color: blueviolet;
+    background: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid blueviolet;
+}
+button:hover {
+    background: blueviolet;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+a{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+}
+/* ------------ Mobile Menu ----------- */
+.mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 25px;
+    z-index: 1;
+    background-color: white;
+    top: 0%;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    transition: top 0.3s ease-in-out;
+}
+
+.open {
+    top: 100%;
+}
+.close{
+    top: -380%;
+}
+
+.icon {
+    color: var(--primaryColor);
+    font-size: 29px !important ;
+}
+
+.mobile-menu .btn {
+    display: block;
+}
+
+.links{
+    display: none;
+}
+.auth button{
+    display: none;
+}
+
+.menu-icon{
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 2;
+}
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/*mid screens &  desktop view */
+
+
+
+@media (min-width: 756px){
+    .menu-icon{
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    } 
+
+    .links, .auth button{
+        display: block;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin: 0 10% 0 auto;
+    }
+    .btn{
+        margin-right: 3% ;
+    }
+    
+}

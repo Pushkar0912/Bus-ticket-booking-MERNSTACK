@@ -1,0 +1,19 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+  }
+  .container {
+    width: 100%;
+    min-height: max-content;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
