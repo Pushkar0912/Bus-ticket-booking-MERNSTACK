@@ -1,9 +1,9 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background:url("../../assets/bushero.jpg");
+    background-image:url("../../assets/duc-khoa-nguyen-oM7Ji-SCFiU-unsplash.jpg");
     /* object-fit: cover; */
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     /* color: white; */
     display: flex;

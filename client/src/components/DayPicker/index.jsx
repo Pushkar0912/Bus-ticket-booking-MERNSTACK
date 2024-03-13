@@ -7,7 +7,7 @@ export default function MuiDayPicker({date, setDate}) {
     padding: '5px 10px',
     border: 'none !important',
     outline:' none !important',
-}
+} 
 
 
   const today = new Date();
